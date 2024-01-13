@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: redox_left
+    shield: redoxdactyl_left
   - board: nice_nano_v2
-    shield: redox_right
+    shield: redoxdactyl_right
   - board: nice_nano_v2
     shield: settings_reset
