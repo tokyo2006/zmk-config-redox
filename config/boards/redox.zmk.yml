@@ -1,5 +1,5 @@
 file_format: "1"
-id: redoxdactyl
+id: redox
 name: Redox
 type: shield
 url:
@@ -9,5 +9,5 @@ exposes:
 features:
   - keys
 siblings:
-  - redoxdactyl_left
-  - redoxdactyl_right
+  - redox_left
+  - redox_right
