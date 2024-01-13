@@ -1,0 +1,8 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_REDOXDACTYL_LEFT
+	def_bool $(shields_list_contains,redoxdactyl_left)
+
+config SHIELD_REDOXDACTYL_RIGHT
+	def_bool $(shields_list_contains,redoxdactyl_right)

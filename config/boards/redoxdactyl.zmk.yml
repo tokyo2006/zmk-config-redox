@@ -1,0 +1,13 @@
+file_format: "1"
+id: redoxdactyl
+name: Redox
+type: shield
+url:
+requires:
+  - pro_micro
+exposes:
+features:
+  - keys
+siblings:
+  - redoxdactyl_left
+  - redoxdactyl_right
