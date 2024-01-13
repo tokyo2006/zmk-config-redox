@@ -1,0 +1,12 @@
+{
+    "id": "redoxdactyl",
+    "name": "redox",
+    "layouts": {
+      "default_layout": {
+        "name": "default_layout",
+        "layout": [
+        ]
+    }
+  },
+  "sensors": []
+}
