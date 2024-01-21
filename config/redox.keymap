@@ -140,11 +140,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&as TILDE GRAVE  &kp N1   &kp N2    &kp N3            &kp N4    &kp N5                                                            &kp N6  &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
-&kp ESC          &kp Q    &kp W     &kp E             &kp R     &kp T   &to 1                                         &to 2       &kp Y   &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &kp MINUS
-&kp TAB          &kp A    &kp S     &kp D             &kp F     &kp G   &to 3                                         &to 4       &kp H   &kp J              &kp K                &kp L                    &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
-&kp CAPSLOCK     &kp Z    &kp X     &kp C             &kp V     &kp B   &kp BACKSPACE  &kp LSHIFT    &kp RIGHT_SHIFT  &kp DELETE  &kp N   &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
-&kp LCTRL        &kp END  &kp HOME  &kp LEFT_CONTROL  &kp LGUI          &kp ENTER      &kp SPACE     &kp SPACE        &kp ENTER           &kp RIGHT_COMMAND  &kp LEFT             &kp DOWN                 &kp UP               &kp RIGHT
+&as TILDE GRAVE  &kp N1   &kp N2    &kp N3     &kp N4    &kp N5                                                                          &kp N6  &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
+&kp ESC          &kp Q    &kp W     &kp E      &kp R     &kp T   &to 1                                              &to 2                &kp Y   &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &kp MINUS
+&kp TAB          &kp A    &kp S     &kp D      &kp F     &kp G   &to 3                                              &to 4                &kp H   &kp J              &kp K                &kp L                    &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
+&kp CAPSLOCK     &kp Z    &kp X     &kp C      &kp V     &kp B   &kp BACKSPACE       &kp LSHIFT    &kp RIGHT_SHIFT  &kp DELETE           &kp N   &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
+&kp LEFT_SHIFT   &kp END  &kp HOME  &kp LCTRL  &kp LGUI          &hm LEFT_ALT ENTER  &kp SPACE     &kp SPACE        &hm RIGHT_ALT ENTER          &kp RIGHT_COMMAND  &kp RIGHT_CONTROL    &kp PAGE_UP              &kp PAGE_DOWN        &kp RIGHT_SHIFT
             >;
         };
 
