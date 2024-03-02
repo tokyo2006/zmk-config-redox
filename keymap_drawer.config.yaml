@@ -687,13 +687,13 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RCMD: $$mdi:apple-keyboard-command$$
     RG: $$mdi:apple-keyboard-command$$
-    PRSC: $$mdi:printer-outline$$
+    PSCRN: $$mdi:printer-outline$$
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
     PAGE_UP:
-      tap: 'PGUP'
+      tap: 'PgUp'
       shifted: ''
     PAGE_DOWN:
-      tap: 'PGDN'
+      tap: 'PgDn'
       shifted: ''
     # "Meh" key
     LS(LC(LALT)): $$mdi:star-three-points$$
