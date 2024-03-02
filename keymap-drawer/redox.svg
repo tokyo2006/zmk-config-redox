@@ -463,8 +463,8 @@ path.combo {
     --color--key--border: var(--color--material--teal--100);
 }
 </style>
-<g transform="translate(0, 0)" class="layer-default">
-<text x="0" y="0" class="label">default</text>
+<g transform="translate(0, 0)" class="layer-0">
+<text x="0" y="0" class="label">0</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 70)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -552,12 +552,12 @@ path.combo {
 </g>
 <g transform="translate(520, 120)" class="key keypos-18">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">lower</text>
+<text x="0" y="0" class="key tap">1</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 120)" class="key keypos-19">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">raise</text>
+<text x="0" y="0" class="key tap">2</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(920, 140)" class="key keypos-20">
@@ -617,7 +617,7 @@ path.combo {
 </g>
 <g transform="translate(520, 200)" class="key keypos-32">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">adjust</tspan></text>
+<text x="0" y="0" class="key tap">3</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 200)" class="key keypos-33">
@@ -750,7 +750,7 @@ path.combo {
 <g transform="translate(388, 389) rotate(15.0)" class="key keypos-60">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:backspace"/>
-<text x="0" y="34" class="key hold">lower</text>
+<text x="0" y="34" class="key hold">1</text>
 </g>
 <g transform="translate(495, 435) rotate(30.0)" class="key keypos-61">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -843,8 +843,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(0, 529)" class="layer-lower">
-<text x="0" y="0" class="label">lower</text>
+<g transform="translate(0, 529)" class="layer-1">
+<text x="0" y="0" class="label">1</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 70)" class="key trans keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
@@ -920,12 +920,12 @@ path.combo {
 </g>
 <g transform="translate(520, 120)" class="key keypos-18">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 71%">default</tspan></text>
+<text x="0" y="0" class="key tap">0</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 120)" class="key keypos-19">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">raise</text>
+<text x="0" y="0" class="key tap">2</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(920, 140)" class="key keypos-20">
@@ -983,7 +983,7 @@ path.combo {
 </g>
 <g transform="translate(520, 200)" class="key keypos-32">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">adjust</tspan></text>
+<text x="0" y="0" class="key tap">3</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 200)" class="key keypos-33">
@@ -1188,8 +1188,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(0, 1059)" class="layer-raise">
-<text x="0" y="0" class="label">raise</text>
+<g transform="translate(0, 1059)" class="layer-2">
+<text x="0" y="0" class="label">2</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 70)" class="key trans keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
@@ -1265,12 +1265,12 @@ path.combo {
 </g>
 <g transform="translate(520, 120)" class="key keypos-18">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">lower</text>
+<text x="0" y="0" class="key tap">1</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 120)" class="key keypos-19">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 71%">default</tspan></text>
+<text x="0" y="0" class="key tap">0</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(920, 140)" class="key keypos-20">
@@ -1323,7 +1323,7 @@ path.combo {
 </g>
 <g transform="translate(520, 200)" class="key keypos-32">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">adjust</tspan></text>
+<text x="0" y="0" class="key tap">3</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 200)" class="key keypos-33">
@@ -1338,9 +1338,7 @@ path.combo {
 </g>
 <g transform="translate(1000, 210)" class="key keypos-35">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">PG</tspan><tspan x="0" dy="1.0em">UP</tspan>
-</text>
+<text x="0" y="0" class="key tap">PgUp</text>
 </g>
 <g transform="translate(1080, 200)" class="key keypos-36">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1406,9 +1404,7 @@ path.combo {
 </g>
 <g transform="translate(1000, 290)" class="key keypos-51">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">PG</tspan><tspan x="0" dy="1.0em">DN</tspan>
-</text>
+<text x="0" y="0" class="key tap">PgDn</text>
 </g>
 <g transform="translate(1080, 280)" class="key keypos-52">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1532,8 +1528,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(0, 1588)" class="layer-adjust">
-<text x="0" y="0" class="label">adjust</text>
+<g transform="translate(0, 1588)" class="layer-3">
+<text x="0" y="0" class="label">3</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 70)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1614,12 +1610,12 @@ path.combo {
 </g>
 <g transform="translate(520, 120)" class="key keypos-18">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">lower</text>
+<text x="0" y="0" class="key tap">1</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 120)" class="key keypos-19">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">raise</text>
+<text x="0" y="0" class="key tap">2</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(920, 140)" class="key keypos-20">
@@ -1683,7 +1679,7 @@ path.combo {
 </g>
 <g transform="translate(520, 200)" class="key keypos-32">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 71%">default</tspan></text>
+<text x="0" y="0" class="key tap">0</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 200)" class="key keypos-33">
@@ -1968,12 +1964,12 @@ path.combo {
 </g>
 <g transform="translate(520, 120)" class="key keypos-18">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">lower</text>
+<text x="0" y="0" class="key tap">1</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 120)" class="key keypos-19">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">raise</text>
+<text x="0" y="0" class="key tap">2</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(920, 140)" class="key trans keypos-20">
@@ -2029,12 +2025,12 @@ path.combo {
 </g>
 <g transform="translate(520, 200)" class="key keypos-32">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">adjust</tspan></text>
+<text x="0" y="0" class="key tap">3</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 200)" class="key keypos-33">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 71%">default</tspan></text>
+<text x="0" y="0" class="key tap">0</text>
 <text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(920, 220)" class="key trans keypos-34">
