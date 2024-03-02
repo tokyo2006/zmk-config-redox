@@ -133,6 +133,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            label = "0";
             // --------------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6    |  7    |  8    |  9   | 0  |    BKSP   |
             // | TAB   |  Q  |  W  |   E   |  R  |  T  |   (   |           ---        |  )    |  Y    |  U    |  I    |  O   | P  |     -     |
@@ -142,7 +143,7 @@
 
             bindings = <
 &as TILDE GRAVE       &kp N1          &kp N2          &kp N3              &kp N4            &kp N5                                                                                                    &kp N6  &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
-&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T   &to 1                                                              &to 2                          &kp Y   &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
+&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T   &to 1                                                              &to 2                          &kp Y   &kp U              &kp I                &kp O                    &hm LS(LG(V)) P      &as UNDERSCORE MINUS
 &kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G   &to 3                                                              &to 4                          &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
 &mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B   &as LEFT_BRACE LEFT_BRACKET  &kp PIPE        &kp NON_US_BACKSLASH  &as RIGHT_BRACE RIGHT_BRACKET  &kp N   &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
 &kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL    &lt 1 BACKSPACE           &ltq 3 TAB                   &ltq 2 SPACE    &ltq 2 SPACE          &ltq 3 ENTER                           &lt 4 BACKSPACE    &kp RIGHT_CONTROL    &kp PAGE_UP              &kp PAGE_DOWN        &kp RIGHT_SHIFT
@@ -150,6 +151,7 @@
         };
 
         lower_layer {
+            label = "1";
             // --------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |   4   |  5  |                   ---              |  6  |  7  |   8  |  9   |  0  |  DEL  |
             // | ESC   |  1  |  2  |   3   |   4   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  0  |  DEL  |
@@ -159,7 +161,7 @@
 
             bindings = <
 &trans  &trans  &trans        &trans          &trans           &trans                                               &trans                &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans        &kp UP_ARROW    &trans           &kp K_MUTE         &to 0                     &to 2   &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &trans  &trans        &kp UP_ARROW    &trans           &kp C_MUTE         &to 0                     &to 2   &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
 &trans  &trans  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_UP    &to 3                     &to 4   &kp C_BRI_UP          &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &trans        &trans
 &trans  &trans  &out OUT_TOG  &trans          &trans           &kp C_VOLUME_DOWN  &trans  &trans    &trans  &trans  &kp C_BRIGHTNESS_DEC  &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans        &trans          &trans                              &trans  &trans    &trans  &trans                        &trans        &trans        &trans        &trans        &trans
@@ -167,6 +169,7 @@
         };
 
         raise_layer {
+            label = "2";
             // ----------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6   |  7   |  8   |  9   |  0    |  DEL  |
             // | ESC   |  !  |  @  |   #   |  $  |  %  |   (   |           ---        |  )    |  ^   |  &   |  *   |  (   |  )    |  DEL  |
@@ -178,12 +181,13 @@
 &trans  &trans      &trans    &trans    &trans    &trans                                            &trans     &trans     &trans     &trans    &trans     &trans
 &trans  &kp EXCL    &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &to 1                     &to 0   &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp DEL
 &trans  &kp ESCAPE  &kp CAPS  &kp HOME  &kp END   &kp UNDERSCORE  &to 3                     &to 4   &kp MINUS  &kp PG_UP  &kp PSCRN  &kp UP    &kp GRAVE  &kp TILDE
-&trans  &kp DELETE  &kp LGUI  &kp LPAR  &kp RPAR  &kp TILDE       &trans  &trans    &trans  &trans  &kp GRAVE  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
+&trans  &kp DELETE  &kp LEFT_COMMAND  &kp LPAR  &kp RPAR  &kp TILDE       &trans  &trans    &trans  &trans  &kp GRAVE  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
 &trans  &trans      &trans    &trans    &trans                    &trans  &trans    &trans  &trans             &trans     &trans     &trans    &trans     &trans
             >;
         };
 
         adjust_layer {
+            label = "3";
             // -----------------------------------------------------------------------------------------
             // |  F1   |  F2   |    F3    |    F4     |     F5     | F6 |                   ---                | F7  | F8  |  F9  |  F10 | F11 | F12        |
             // | TAB   |       |          |           |            |    | BOOTL |           ---        |  )    | BT1 | BT2 |  BT3 |  BT4 | BT5 | OUTPUT TGL |
@@ -203,13 +207,13 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans          &trans          &trans           &trans                                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &to 1                           &to 2   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &msc SCRL_UP        &msc SCRL_DOWN   &trans  &to 1                           &to 2   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &to 3                           &to 0   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans           &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans                   &mkp LCLK  &mkp RCLK    &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "mouse";
+            label = "4";
         };
     };
 };
