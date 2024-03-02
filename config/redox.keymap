@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -133,14 +133,13 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "0";
             // --------------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6    |  7    |  8    |  9   | 0  |    BKSP   |
             // | TAB   |  Q  |  W  |   E   |  R  |  T  |   (   |           ---        |  )    |  Y    |  U    |  I    |  O   | P  |     -     |
             // | CTRL  |  A  |  S  |   D   |  F  |  G  |   [   |           ---        |  ]    |  H    |  J    |  K    |  L   | ;  |     '     |
             // | SHIFT |  Z  |  X  |   C   |  V  |  B  | PG_UP | PG_DOWN | --- | HOME | END   |  N    |  M    |  ,    |  .   | /  | SHFT(RET) |
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
-
+            label = "0";
             bindings = <
 &as TILDE GRAVE       &kp N1          &kp N2          &kp N3              &kp N4            &kp N5                                                                                                    &kp N6  &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
 &kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T   &to 1                                                              &to 2                          &kp Y   &kp U              &kp I                &kp O                    &hm LS(LG(V)) P      &as UNDERSCORE MINUS
@@ -151,14 +150,13 @@
         };
 
         lower_layer {
-            label = "1";
             // --------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |   4   |  5  |                   ---              |  6  |  7  |   8  |  9   |  0  |  DEL  |
             // | ESC   |  1  |  2  |   3   |   4   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  0  |  DEL  |
             // | CTRL  |  -  |  =  |   [   |   ]   |  \  |   [   |           ---        |  ]  |  *  |  4  |   5  |  6   |  +  |   -   |
             // | SHIFT | ESC | GUI | COPY  | PASTE |     | PG_UP | PG_DOWN | --- | HOME | END |  \  |  1  |   2  |  3   | RET |  RET  |
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
-
+            label = "1";
             bindings = <
 &trans  &trans  &trans        &trans          &trans           &trans                                               &trans                &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans        &kp UP_ARROW    &trans           &kp C_MUTE         &to 0                     &to 2   &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
@@ -169,14 +167,13 @@
         };
 
         raise_layer {
-            label = "2";
             // ----------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6   |  7   |  8   |  9   |  0    |  DEL  |
             // | ESC   |  !  |  @  |   #   |  $  |  %  |   (   |           ---        |  )    |  ^   |  &   |  *   |  (   |  )    |  DEL  |
             // | CTRL  |  _  |  +  |   {   |  }  | "|" |   [   |           ---        |  ]    | HOME | PGUP | PRSC | UP   |  `    |   ~   |
             // | SHIFT | ESC | GUI |   (   |  )  |     | PG_UP | PG_DOWN | --- | HOME | END   | END  | PGDN | LEFT | DOWN | RIGHT |  RET  |
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
-
+            label = "2";
             bindings = <
 &trans  &trans      &trans    &trans    &trans    &trans                                            &trans     &trans     &trans     &trans    &trans     &trans
 &trans  &kp EXCL    &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &to 1                     &to 0   &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp DEL
@@ -187,27 +184,26 @@
         };
 
         adjust_layer {
-            label = "3";
             // -----------------------------------------------------------------------------------------
             // |  F1   |  F2   |    F3    |    F4     |     F5     | F6 |                   ---                | F7  | F8  |  F9  |  F10 | F11 | F12        |
             // | TAB   |       |          |           |            |    | BOOTL |           ---        |  )    | BT1 | BT2 |  BT3 |  BT4 | BT5 | OUTPUT TGL |
             // | CTRL  | MUTE  |  Vol Dn  |  Vol Up   | Play/Pause |    | RESET |           ---        |  ]    | F1  | F2  |  F3  |  F4  | F5  | F6         |
             // | SHIFT | PSCRN |  PSCRN   |   CAPS    |            |    | PG_UP | PG_DOWN | --- | HOME | END   | F7  | F8  |  F9  |  F10 | F11 | F12        |
             // | CRTL  | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
-
+            label = "3";
             bindings = <
-&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6                                                         &kp F7                         &kp F8           &kp F9      &kp F10       &kp F11  &kp F12
-&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                       &to 1                     &to 2   &kp N6                         &kp N7           &kp N8      &kp NUMBER_9  &kp N0   &out OUT_TOG
-&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &as PLUS EQUAL               &to 0                     &to 4   &as PLUS EQUAL                 &kp RIGHT_SHIFT  &kp K_FIND  &trans        &trans   &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &as LEFT_BRACE LEFT_BRACKET  &trans  &trans    &trans  &trans  &as RIGHT_BRACE RIGHT_BRACKET  &kp F13          &kp F14     &kp F15       &kp F16  &trans
-&trans  &trans     &trans     &trans     &trans                                  &trans  &trans    &trans  &trans                                 &trans           &trans      &trans        &trans   &trans
+&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6                                              &kp F7             &kp F8           &kp F9      &kp F10       &kp F11  &kp F12
+&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5            &to 1                     &to 2   &kp N6             &kp N7           &kp N8      &kp NUMBER_9  &kp N0   &out OUT_TOG
+&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LEFT_BRACKET  &to 0                     &to 4   &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &kp K_FIND  &trans        &trans   &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LEFT_BRACE    &trans  &trans    &trans  &trans  &kp RIGHT_BRACE    &kp F13          &kp F14     &kp F15       &kp F16  &trans
+&trans  &trans     &trans     &trans     &trans                       &trans  &trans    &trans  &trans                     &trans           &trans      &trans        &trans   &trans
             >;
         };
 
         Mouse {
             bindings = <
 &trans  &trans  &trans          &trans          &trans           &trans                                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &msc SCRL_UP        &msc SCRL_DOWN   &trans  &to 1                           &to 2   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &to 1                           &to 2   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &to 3                           &to 0   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans           &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans                   &mkp LCLK  &mkp RCLK    &trans  &trans          &trans  &trans  &trans  &trans  &trans
