@@ -41,7 +41,7 @@ layers:
   - {t: L, s: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: ':', s: ':'}
   - {t: '''', h: '"', s: '"'}
-  - {t: '$$mdi:keyboard-return$$', h: LEFT SHIFT}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -56,20 +56,20 @@ layers:
   - {t: ',', h: <, s: <}
   - {t: ., h: '>'}
   - {t: /, h: '?', s: '?'}
-  - {t: RET, h: '$$mdi:apple-keyboard-shift$$'}
-  - LEFT SHIFT
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - END
   - HOME
-  - LEFT CONTROL
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:backspace$$', h: lower}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:numeric$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:numeric$$'}
   - {t: '$$mdi:backspace$$', h: Mouse}
-  - RIGHT CONTROL
-  - PageUp
-  - PageUp
+  - $$mdi:apple-keyboard-control$$
+  - PgUp
+  - PgDn
   - $$mdi:apple-keyboard-shift$$
   lower:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -87,9 +87,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - UP ARROW
+  - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - MUTE
+  - $$mdi:volume-off$$
   - {t: default, h: toggle}
   - {t: raise, h: toggle}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -101,15 +101,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
-  - DOWN ARROW
-  - RIGHT ARROW
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - $$mdi:volume-high$$
   - {t: adjust, h: toggle}
   - {t: Mouse, h: toggle}
   - $$mdi:brightness-5$$
   - $$mdi:bluetooth-off$$
-  - BT PRV
-  - BT NXT
+  - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - BRIGHTNESS DEC
+  - $$mdi:brightness-7$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -179,13 +179,13 @@ layers:
   - {t: Mouse, h: toggle}
   - {t: '-', s: _}
   - PG UP
-  - PSCRN
+  - $$mdi:printer-outline$$
   - $$mdi:arrow-up-bold$$
   - {t: '`', s: '~'}
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - (
   - )
   - '~'
@@ -198,7 +198,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - RET
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -245,10 +245,10 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '=', h: +, s: +}
+  - {t: '[', s: '{'}
   - {t: default, h: toggle}
   - {t: Mouse, h: toggle}
-  - {t: '=', h: +, s: +}
+  - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-finder$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -259,12 +259,12 @@ layers:
   - {t: X, h: '$$mdi:apple-keyboard-command$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '[', h: '{', s: '{'}
+  - '{'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ']', h: '}', s: '}'}
+  - '}'
   - F13
   - F14
   - F15
@@ -300,7 +300,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
-  - '&mmv MOVE_UP'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: lower, h: toggle}
@@ -313,9 +313,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: adjust, h: toggle}
   - {t: default, h: toggle}
