@@ -177,8 +177,8 @@
             bindings = <
 &trans  &trans      &trans    &trans    &trans    &trans                                            &trans     &trans     &trans     &trans    &trans     &trans
 &trans  &kp EXCL    &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &to 1                     &to 0   &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp DEL
-&trans  &kp ESCAPE  &kp CAPS  &kp HOME  &kp END   &kp UNDERSCORE  &to 3                     &to 4   &kp MINUS  &kp PG_UP  &kp PSCRN  &kp UP    &kp GRAVE  &kp TILDE
-&trans  &kp DELETE  &kp LEFT_COMMAND  &kp LPAR  &kp RPAR  &kp TILDE       &trans  &trans    &trans  &trans  &kp GRAVE  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
+&trans  &kp ESCAPE  &kp CAPS  &kp HOME  &kp END   &kp UNDERSCORE  &to 3                     &to 4   &kp MINUS  &kp PAGE_UP  &kp PSCRN  &kp UP    &kp GRAVE  &kp TILDE
+&trans  &kp DELETE  &kp LEFT_COMMAND  &kp LPAR  &kp RPAR  &kp TILDE       &trans  &trans    &trans  &trans  &kp GRAVE  &kp PAGE_DOWN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
 &trans  &trans      &trans    &trans    &trans                    &trans  &trans    &trans  &trans             &trans     &trans     &trans    &trans     &trans
             >;
         };
