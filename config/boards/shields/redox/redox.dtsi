@@ -43,5 +43,11 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3)      RC(4,4)    RC(4,5) RC(4,6) RC(4,7) RC(4,8) 
             ;
 
     };
-
+    
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        columns = <1>;
+        rows = <0>;
+        events = <>;
+    };
 };
