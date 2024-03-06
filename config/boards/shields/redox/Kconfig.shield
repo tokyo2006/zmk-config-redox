@@ -1,0 +1,14 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_REDOX_CENTRAL_DONGLE
+    def_bool $(shields_list_contains,redox_central_dongle)
+
+config SHIELD_REDOX_CENTRAL_LEFT
+    def_bool $(shields_list_contains,redox_central_left)
+    
+config SHIELD_REDOX_PERIPHERAL_LEFT
+    def_bool $(shields_list_contains,redox_peripheral_left)
+
+config SHIELD_REDOX_PERIPHERAL_RIGHT
+    def_bool $(shields_list_contains,redox_peripheral_right)
