@@ -72,7 +72,7 @@ layers:
   - PgDn
   - $$mdi:apple-keyboard-shift$$
   lower:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&dongle_bootload_macro'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

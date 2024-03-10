@@ -850,9 +850,9 @@ path.combo {
 <g transform="translate(0, 529)" class="layer-lower">
 <text x="0" y="0" class="label">lower</text>
 <g transform="translate(0, 0)">
-<g transform="translate(40, 70)" class="key trans keypos-0">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(40, 70)" class="key keypos-0">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">&amp;dongle_bootload_macro</tspan></text>
 </g>
 <g transform="translate(120, 70)" class="key trans keypos-1">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
