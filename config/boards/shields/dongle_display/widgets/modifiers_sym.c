@@ -116,7 +116,7 @@ const lv_img_dsc_t alt_icon = {
 #define LV_ATTRIBUTE_IMG_GUI
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GUI uint8_t gui_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GUI uint8_t win_map[] = {
   0xff, 0xff, 0xff, 0xff, 	/*Color of index 0*/
   0x00, 0x00, 0x00, 0xff, 	/*Color of index 1*/
 
@@ -136,12 +136,80 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GUI uint8
   0x00, 0x00, 
 };
 
-const lv_img_dsc_t gui_icon = {
+const lv_img_dsc_t win_icon = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 14,
   .header.h = 14,
   .data_size = 36,
-  .data = gui_map,
+  .data = win_map,
+};
+
+#ifndef LV_ATTRIBUTE_IMG_CMD
+#define LV_ATTRIBUTE_IMG_CMD
+#endif
+
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_CMD uint8_t cmd_map[] = {
+  0xff, 0xff, 0xff, 0xff, 	/*Color of index 0*/
+  0x00, 0x00, 0x00, 0xff, 	/*Color of index 1*/
+
+  0x00, 0x00,
+  0x00, 0x00,
+  0x18, 0x60,
+  0x24, 0x90,
+  0x24, 0x90,
+  0x1f, 0xe0,
+  0x04, 0x80,
+  0x04, 0x80,
+  0x1f, 0xe0,
+  0x24, 0x90,
+  0x24, 0x90,
+  0x18, 0x60,
+  0x00, 0x00,
+  0x00, 0x00,
+};
+
+const lv_img_dsc_t cmd_icon = {
+  .header.cf = LV_IMG_CF_INDEXED_1BIT,
+  .header.always_zero = 0,
+  .header.reserved = 0,
+  .header.w = 14,
+  .header.h = 14,
+  .data_size = 36,
+  .data = cmd_map,
+};
+
+#ifndef LV_ATTRIBUTE_IMG_OPT
+#define LV_ATTRIBUTE_IMG_OPT
+#endif
+
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_OPT uint8_t opt_map[] = {
+  0xff, 0xff, 0xff, 0xff, 	/*Color of index 0*/
+  0x00, 0x00, 0x00, 0xff, 	/*Color of index 1*/
+
+  0x00, 0x00,
+  0x00, 0x00,
+  0x3c, 0xe0,
+  0x3c, 0xe0,
+  0x06, 0x00,
+  0x06, 0x00,
+  0x06, 0x00,
+  0x03, 0x00,
+  0x03, 0x00,
+  0x03, 0x00,
+  0x01, 0xe0,
+  0x01, 0xe0,
+  0x00, 0x00,
+  0x00, 0x00,
+};
+
+const lv_img_dsc_t opt_icon = {
+  .header.cf = LV_IMG_CF_INDEXED_1BIT,
+  .header.always_zero = 0,
+  .header.reserved = 0,
+  .header.w = 14,
+  .header.h = 14,
+  .data_size = 36,
+  .data = opt_map,
 };
