@@ -45,7 +45,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3)      RC(4,4)    RC(4,5) RC(4,6) RC(4,7) RC(4,8) 
         reg = <0x3c>;
         width = <129>;
         height = <64>;
-        segment-offset = <2>;
+        segment-offset = <1>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
