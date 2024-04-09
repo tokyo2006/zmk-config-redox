@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: redox/rev1/base}
 layers:
-  default:
+  Qwery:
   - {t: '`', h: '~', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -67,10 +67,10 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:numeric$$'}
   - {t: '$$mdi:backspace$$', h: Mouse}
-  - $$mdi:apple-keyboard-control$$
-  - PgUp
-  - PgDn
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   lower:
   - '&dongle_bootload_macro'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -90,7 +90,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - MUTE
-  - {t: default, h: toggle}
+  - {t: Qwery, h: toggle}
   - {t: raise, h: toggle}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -162,7 +162,7 @@ layers:
   - $
   - '%'
   - {t: lower, h: toggle}
-  - {t: default, h: toggle}
+  - {t: Qwery, h: toggle}
   - ^
   - '&'
   - '*'
@@ -246,7 +246,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '[', s: '{'}
-  - {t: default, h: toggle}
+  - {t: Qwery, h: toggle}
   - {t: Mouse, h: toggle}
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
@@ -318,11 +318,11 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: adjust, h: toggle}
-  - {t: default, h: toggle}
+  - {t: Qwery, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LS(LEFT ALT)
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
