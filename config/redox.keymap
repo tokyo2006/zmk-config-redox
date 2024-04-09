@@ -140,7 +140,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Qwery {
             // --------------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6    |  7    |  8    |  9   | 0  |    BKSP   |
             // | TAB   |  Q  |  W  |   E   |  R  |  T  |   (   |           ---        |  )    |  Y    |  U    |  I    |  O   | P  |     -     |
@@ -153,8 +153,10 @@
 &kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T   &to 1                                                              &to 2                          &kp Y   &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
 &kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G   &to 3                                                              &to 4                          &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
 &mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B   &as LEFT_BRACE LEFT_BRACKET  &as PIPE BACKSLASH    &as PLUS EQUAL  &as RIGHT_BRACE RIGHT_BRACKET  &kp N   &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
-&kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL    &lt 1 BACKSPACE           &ltq 3 TAB                   &ltq 2 SPACE          &ltq 2 SPACE    &ltq 3 ENTER                           &lt 4 BACKSPACE    &kp RIGHT_CONTROL    &kp PAGE_UP              &kp PAGE_DOWN        &kp RIGHT_SHIFT
+&kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL    &lt 1 BACKSPACE           &ltq 3 TAB                   &ltq 2 SPACE          &ltq 2 SPACE    &ltq 3 ENTER                           &lt 4 BACKSPACE    &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
             >;
+
+            label = "Qwery";
         };
 
         lower_layer {
@@ -210,11 +212,11 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &to 1                           &to 2   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &to 3                           &to 0   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &mkp LCLK                &mkp MCLK  &mkp RCLK    &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                                          &trans  &trans            &trans          &trans        &trans  &trans
+&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &to 1                           &to 2   &trans  &trans            &trans          &trans        &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &to 3                           &to 0   &trans  &kp LS(LEFT_ALT)  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans     &trans       &trans  &trans  &trans  &trans            &trans          &trans        &trans  &trans
+&trans  &trans  &trans          &trans          &mkp LCLK                &mkp MCLK  &mkp RCLK    &trans  &trans          &trans            &trans          &trans        &trans  &trans
             >;
 
             label = "mouse";
