@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <dt-bindings/zmk/mouse.h>
-#include <behaviors.dtsi>
 #include <behaviors/mouse_keys.dtsi>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
@@ -150,7 +150,7 @@
 
             bindings = <
 &as TILDE GRAVE       &kp N1          &kp N2          &kp N3              &kp N4            &kp N5                                                                                                    &kp N6  &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
-&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T   &to 1                                                              &to 2                          &kp Y   &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
+&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T   &to 5                                                              &to 2                          &kp Y   &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
 &kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G   &to 3                                                              &to 4                          &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
 &mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B   &as LEFT_BRACE LEFT_BRACKET  &as PIPE BACKSLASH    &as PLUS EQUAL  &as RIGHT_BRACE RIGHT_BRACKET  &kp N   &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
 &kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL    &lt 1 BACKSPACE           &ltq 3 TAB                   &ltq 2 SPACE          &ltq 2 SPACE    &ltq 3 ENTER                           &lt 4 BACKSPACE    &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
@@ -159,7 +159,7 @@
             label = "Qwery";
         };
 
-        lower_layer {
+        Flash {
             // --------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |   4   |  5  |                   ---              |  6  |  7  |   8  |  9   |  0  |  DEL  |
             // | ESC   |  1  |  2  |   3   |   4   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  0  |  DEL  |
@@ -174,9 +174,11 @@
 &trans                  &trans  &out OUT_TOG  &trans          &trans           &kp C_VOLUME_DOWN  &trans  &trans    &trans  &trans  &kp C_BRIGHTNESS_DEC  &trans        &trans        &trans        &trans        &trans
 &trans                  &trans  &trans        &trans          &trans                              &trans  &trans    &trans  &trans                        &trans        &trans        &trans        &trans        &trans
             >;
+
+            label = "Flash";
         };
 
-        raise_layer {
+        Symbol {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6   |  7   |  8   |  9   |  0    |  DEL  |
             // | ESC   |  !  |  @  |   #   |  $  |  %  |   (   |           ---        |  )    |  ^   |  &   |  *   |  (   |  )    |  DEL  |
@@ -191,9 +193,11 @@
 &trans  &kp DELETE  &kp LGUI  &kp LPAR  &kp RPAR  &kp TILDE       &trans  &trans    &trans  &trans  &kp GRAVE  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
 &trans  &trans      &trans    &trans    &trans                    &trans  &trans    &trans  &trans             &trans     &trans     &trans    &trans     &trans
             >;
+
+            label = "Symbol";
         };
 
-        adjust_layer {
+        Modify {
             // -----------------------------------------------------------------------------------------
             // |  F1   |  F2   |    F3    |    F4     |     F5     | F6 |                   ---                | F7  | F8  |  F9  |  F10 | F11 | F12        |
             // | TAB   |       |          |           |            |    | BOOTL |           ---        |  )    | BT1 | BT2 |  BT3 |  BT4 | BT5 | OUTPUT TGL |
@@ -208,6 +212,8 @@
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LEFT_BRACE    &trans  &trans    &trans  &trans  &kp RIGHT_BRACE    &kp F13          &kp F14     &kp F15       &kp F16  &trans
 &trans  &trans     &trans     &trans     &trans                       &trans  &trans    &trans  &trans                     &trans           &trans      &trans        &trans   &trans
             >;
+
+            label = "Modify";
         };
 
         Mouse {
@@ -220,6 +226,18 @@
             >;
 
             label = "mouse";
+        };
+
+        Num {
+            bindings = <
+&trans  &trans     &trans         &trans     &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1     &kp N2         &kp N3     &kp N4  &kp N5  &to 0                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N6     &kp N7         &kp N8     &kp N9  &kp N0  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(X)  &kp LC(LS(O))  &kp LA(I)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans         &trans     &trans          &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "Num";
         };
     };
 };
