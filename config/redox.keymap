@@ -168,11 +168,11 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
-&dongle_bootload_macro  &trans        &trans        &trans            &trans          &trans                                               &trans                &trans          &trans          &trans          &trans  &trans
-&trans                  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 0                     &to 2   &kp C_BRIGHTNESS_INC  &trans          &kp UP_ARROW    &trans          &trans  &trans
-&trans                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 3                     &to 4   &kp C_BRIGHTNESS_DEC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &trans  &trans
-&trans                  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans    &trans  &trans  &trans                &trans          &trans          &trans          &trans  &trans
-&trans                  &trans        &trans        &trans            &trans                             &trans  &trans    &trans  &trans                        &trans          &trans          &trans          &trans  &trans
+&dongle_bootload_macro  &trans        &trans        &trans            &trans          &trans                                               &trans                &trans          &trans          &trans           &trans  &trans
+&trans                  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 0                     &to 2   &kp C_BRIGHTNESS_INC  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 3                     &to 4   &kp C_BRIGHTNESS_DEC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans                  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans    &trans  &trans  &trans                &trans          &trans          &trans           &trans  &trans
+&trans                  &trans        &trans        &trans            &trans                             &trans  &trans    &trans  &trans                        &trans          &trans          &trans           &trans  &trans
             >;
 
             label = "Navi";
