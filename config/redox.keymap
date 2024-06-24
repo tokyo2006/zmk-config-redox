@@ -149,11 +149,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&as TILDE GRAVE       &kp N1          &kp N2          &kp N3              &kp N4            &kp N5                                                                                                    &kp N6  &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
-&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T   &to 3                                                              &to 2                          &kp Y   &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
-&kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G   &to 5                                                              &to 5                          &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
-&mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B   &as LEFT_BRACE LEFT_BRACKET  &as PIPE BACKSLASH    &as PLUS EQUAL  &as RIGHT_BRACE RIGHT_BRACKET  &kp N   &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
-&kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL    &lt 1 BACKSPACE           &ltq 3 TAB                   &ltq 2 SPACE          &ltq 2 SPACE    &ltq 3 ENTER                           &lt 4 BACKSPACE    &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
+&as TILDE GRAVE       &kp N1          &kp N2          &kp N3              &kp N4            &kp N5                                                                                                           &kp N6                   &kp N7             &kp N8               &kp N9                   &kp N0               &kp BSPC
+&kp ESC               &kp Q           &kp W           &kp E               &kp R             &kp T            &to 3                                                            &to 2                          &kp Y                    &kp U              &kp I                &kp O                    &as LS(LG(V)) P      &as UNDERSCORE MINUS
+&kp CAPSLOCK          &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G            &to 5                                                            &to 5                          &kp H                    &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
+&mt LEFT_SHIFT ENTER  &kp Z           &kp X           &kp C               &kp V             &kp B            &as LEFT_BRACE LEFT_BRACKET  &as PIPE BACKSLASH  &as PLUS EQUAL  &as RIGHT_BRACE RIGHT_BRACKET  &kp N                    &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &mt RSHFT RET
+&kp LEFT_SHIFT        &kp END         &kp HOME        &kp LEFT_CONTROL                      &lt 1 BACKSPACE  &ltq 3 TAB                   &ltq 2 SPACE        &ltq 2 SPACE    &ltq 3 ENTER                           &lt 4 BACKSPACE                     &kp LEFT_ARROW       &kp UP_ARROW             &kp DOWN_ARROW       &kp RIGHT_ARROW
             >;
 
             label = "Qwery";
@@ -168,11 +168,11 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
-&dongle_bootload_macro  &trans        &trans        &trans            &trans          &trans                                               &trans                &trans          &trans          &trans           &trans  &trans
-&trans                  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 0                     &to 2   &kp C_BRIGHTNESS_INC  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 3                     &to 4   &kp C_BRIGHTNESS_DEC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans                  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans    &trans  &trans  &trans                &trans          &trans          &trans           &trans  &trans
-&trans                  &trans        &trans        &trans            &trans                             &trans  &trans    &trans  &trans                        &trans          &trans          &trans           &trans  &trans
+&dongle_bootload_macro  &trans        &trans        &trans            &trans          &trans                                             &trans                        &trans          &trans          &trans           &trans  &trans
+&trans                  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP    &to 0                   &to 2   &kp C_BRIGHTNESS_INC          &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &to 3                   &to 4   &kp C_BRIGHTNESS_DEC          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans                  &trans        &out OUT_TOG  &kp END           &kp PAGE_DOWN   &kp K_MUTE         &trans  &trans  &trans  &trans  &trans                        &trans          &trans          &trans           &trans  &trans
+&trans                  &trans        &trans        &trans                            &trans             &trans  &trans  &trans  &trans                        &trans                  &trans          &trans           &trans  &trans
             >;
 
             label = "Navi";
@@ -187,11 +187,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
-&trans  &trans      &trans    &trans    &trans    &trans                                            &trans     &trans     &trans     &trans    &trans     &trans
-&trans  &kp EXCL    &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &to 1                     &to 0   &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp DEL
-&trans  &kp ESCAPE  &kp CAPS  &kp HOME  &kp END   &kp UNDERSCORE  &to 3                     &to 4   &kp MINUS  &kp PG_UP  &kp PSCRN  &kp UP    &kp GRAVE  &kp TILDE
-&trans  &kp DELETE  &kp LGUI  &kp LPAR  &kp RPAR  &kp TILDE       &trans  &trans    &trans  &trans  &kp GRAVE  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
-&trans  &trans      &trans    &trans    &trans                    &trans  &trans    &trans  &trans             &trans     &trans     &trans    &trans     &trans
+&trans  &trans      &trans    &trans    &trans    &trans                                          &trans             &trans     &trans     &trans    &trans     &trans
+&trans  &kp EXCL    &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &to 1                   &to 0   &kp CARET          &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp DEL
+&trans  &kp ESCAPE  &kp CAPS  &kp HOME  &kp END   &kp UNDERSCORE  &to 3                   &to 4   &kp MINUS          &kp PG_UP  &kp PSCRN  &kp UP    &kp GRAVE  &kp TILDE
+&trans  &kp DELETE  &kp LGUI  &kp LPAR  &kp RPAR  &kp TILDE       &trans  &trans  &trans  &trans  &kp GRAVE          &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
+&trans  &trans      &trans    &trans              &trans          &trans  &trans  &trans  &trans             &trans             &trans     &trans    &trans     &trans
             >;
 
             label = "Symbol";
@@ -206,11 +206,11 @@
             // | CRTL  | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
 
             bindings = <
-&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6                                       &kp F7             &kp F8           &kp F9      &kp F10       &kp F11  &kp F12
-&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &to 1                     &to 2   &kp N6             &kp N7           &kp N8      &kp NUMBER_9  &kp N0   &out OUT_TOG
-&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &to 0                     &to 4   &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &kp K_FIND  &trans        &trans   &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans  &trans    &trans  &trans  &kp RIGHT_BRACE    &kp F13          &kp F14     &kp F15       &kp F16  &trans
-&trans  &trans     &trans     &trans     &trans                &trans  &trans    &trans  &trans                     &trans           &trans      &trans        &trans   &trans
+&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6                                     &kp F7                     &kp F8           &kp F9      &kp F10       &kp F11  &kp F12
+&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &to 1                   &to 2   &kp N6                     &kp N7           &kp N8      &kp NUMBER_9  &kp N0   &out OUT_TOG
+&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &to 0                   &to 4   &kp RIGHT_BRACKET          &kp RIGHT_SHIFT  &kp K_FIND  &trans        &trans   &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans  &trans  &trans  &trans  &kp RIGHT_BRACE            &kp F13          &kp F14     &kp F15       &kp F16  &trans
+&trans  &trans     &trans     &trans                &trans     &trans  &trans  &trans  &trans                     &trans                   &trans      &trans        &trans   &trans
             >;
 
             label = "Modify";
@@ -218,11 +218,11 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                                          &trans  &trans            &trans          &trans        &trans  &trans
-&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &to 1                           &to 2   &trans  &trans            &trans          &trans        &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &to 3                           &to 0   &trans  &kp LS(LEFT_ALT)  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans     &trans       &trans  &trans  &trans  &trans            &trans          &trans        &trans  &trans
-&trans  &trans  &trans          &trans          &mkp LCLK                &mkp MCLK  &mkp RCLK    &trans  &trans          &trans            &trans          &trans        &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                                           &trans          &trans            &trans          &trans        &trans  &trans
+&trans  &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans     &to 1                         &to 2   &trans          &trans            &trans          &trans        &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &to 3                         &to 0   &trans          &kp LS(LEFT_ALT)  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans     &trans     &trans     &trans  &trans  &trans          &trans            &trans          &trans        &trans  &trans
+&trans  &trans  &trans          &trans                           &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans          &trans                    &trans          &trans        &trans  &trans
             >;
 
             label = "Mouse";
@@ -230,11 +230,11 @@
 
         Num {
             bindings = <
-&trans  &trans     &trans         &trans     &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1     &kp N2         &kp N3     &kp N4  &kp N5  &to 0                     &to 0   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N6     &kp N7         &kp N8     &kp N9  &kp N0  &to 0                     &to 0   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(X)  &kp LC(LS(O))  &kp LA(I)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans         &trans     &trans          &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans         &trans     &trans  &trans                                  &trans                  &trans                &trans              &trans        &trans        &trans
+&trans  &kp N1     &kp N2         &kp N3     &kp N4  &kp N5  &to 0                   &to 0   &kp NUMBER_6            &kp NUMBER_7          &kp NUMBER_8        &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp N6     &kp N7         &kp N8     &kp N9  &kp N0  &to 0                   &to 0   &as PLUS EQUAL          &as UNDERSCORE MINUS  &as ASTERISK SLASH  &trans        &trans        &trans
+&trans  &kp LS(X)  &kp LC(LS(O))  &kp LA(I)  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans              &trans        &trans        &trans
+&trans  &trans     &trans         &trans             &trans  &trans  &trans  &trans  &trans                  &trans                        &trans              &trans        &trans        &trans
             >;
 
             label = "Num";
@@ -242,11 +242,11 @@
 
         Flash {
             bindings = <
-&dongle_bootload_macro  &trans  &trans        &trans  &trans  &trans                                    &trans  &trans        &bt BT_PRV    &trans        &trans        &bt BT_CLR
-&trans                  &trans  &trans        &trans  &trans  &trans  &trans                    &trans  &trans  &trans        &bt BT_NXT    &trans        &trans        &trans
-&trans                  &trans  &trans        &trans  &trans  &trans  &trans                    &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans                  &trans  &out OUT_TOG  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans
-&trans                  &trans  &trans        &trans  &trans          &trans  &trans    &trans  &trans          &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
+&dongle_bootload_macro  &trans  &trans        &trans  &trans  &trans                                  &trans          &trans        &bt BT_PRV    &trans        &trans        &bt BT_CLR
+&trans                  &trans  &trans        &trans  &trans  &trans  &trans                  &trans  &trans          &trans        &bt BT_NXT    &trans        &trans        &trans
+&trans                  &trans  &trans        &trans  &trans  &trans  &trans                  &trans  &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans                  &trans  &out OUT_TOG  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans        &trans        &trans
+&trans                  &trans  &trans        &trans          &trans  &trans  &trans  &trans  &trans          &trans                &trans        &trans        &trans        &bt BT_CLR_ALL
             >;
 
             label = "Flash";
