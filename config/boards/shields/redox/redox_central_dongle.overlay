@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 #include <dt-bindings/zmk/matrix_transform.h>
-
+#include "redox-layouts.dtsi"
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,matrix-transform = &default_transform;
         zephyr,display = &oled;
+        zmk,physical-layout = &redox_layout;
     };
 
     default_transform: keymap_transform_0 {
