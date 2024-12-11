@@ -19,22 +19,22 @@ layers:
   - E
   - R
   - T
-  - {t: Modify, h: toggle}
-  - {t: Symbol, h: toggle}
+  - $$mdi:volume-high$$
+  - $$mdi:brightness-5$$
   - Y
   - U
   - I
   - O
-  - {t: P, h: Sft+Gui+ V}
-  - {t: '-', h: _, s: _}
+  - Q
+  - {t: \, h: '|', s: '|'}
   - $$mdi:apple-keyboard-caps$$
   - {t: A, s: '$$mdi:apple-keyboard-command$$'}
   - {t: S, s: '$$mdi:apple-keyboard-option$$'}
   - {t: D, s: '$$mdi:apple-keyboard-control$$'}
   - {t: F, s: '$$mdi:apple-keyboard-shift$$'}
   - G
-  - {t: Num, h: toggle}
-  - {t: Num, h: toggle}
+  - $$mdi:volume-low$$
+  - $$mdi:brightness-7$$
   - H
   - {t: J, s: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, s: '$$mdi:apple-keyboard-control$$'}
@@ -61,7 +61,7 @@ layers:
   - END
   - HOME
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:backspace$$', h: Navi}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:navigation-variant$$'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:numeric$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
@@ -90,12 +90,12 @@ layers:
   - HOME
   - PgUp
   - $$mdi:volume-high$$
-  - {t: Qwery, h: toggle}
-  - {t: Symbol, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:brightness-5$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -104,8 +104,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-low$$
-  - {t: Modify, h: toggle}
-  - {t: Mouse, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:brightness-7$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -123,6 +123,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - PgUp
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -130,9 +133,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -161,8 +161,8 @@ layers:
   - '#'
   - $
   - '%'
-  - {t: Navi, h: toggle}
-  - {t: Qwery, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - ^
   - '&'
   - '*'
@@ -175,8 +175,8 @@ layers:
   - HOME
   - END
   - _
-  - {t: Modify, h: toggle}
-  - {t: Mouse, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
   - PG UP
   - $$mdi:printer-outline$$
@@ -232,8 +232,8 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: Navi, h: toggle}
-  - {t: Symbol, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -241,25 +241,25 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+ A
-  - Gui+ S
-  - Gui+ D
-  - Gui+ F
-  - Gui+ G
-  - {t: Qwery, h: toggle}
-  - {t: Mouse, h: toggle}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '[', s: '{'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-finder$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - RIGHT GUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+ Z
-  - Gui+ X
-  - Gui+ C
-  - Gui+ V
-  - Gui+ B
+  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - '{'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -303,8 +303,8 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Navi, h: toggle}
-  - {t: Symbol, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -317,8 +317,8 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Modify, h: toggle}
-  - {t: Qwery, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+ $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
@@ -351,77 +351,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  Num:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: Qwery, h: toggle}
-  - {t: Qwery, h: toggle}
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: Qwery, h: toggle}
-  - {t: Qwery, h: toggle}
-  - {t: '=', h: +, s: +}
-  - {t: '-', h: _, s: _}
-  - {t: /, h: '*', s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+ X
-  - Ctl+Sft+ O
-  - Alt+ I
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -498,12 +427,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
 combos:
-- p: [0, 1]
+- p: [13, 14]
   k: $$mdi:keyboard-esc$$
 - p: [15, 16]
-  k: '['
+  k: {t: '[', s: '{'}
 - p: [21, 22]
-  k: ']'
+  k: {t: ']', s: '}'}
 - p: [29, 30]
   k: (
 - p: [35, 36]
@@ -513,10 +442,10 @@ combos:
 - p: [51, 52]
   k: '}'
 - p: [16, 21]
-  k: \
+  k: {t: \, s: '|'}
 - p: [30, 35]
   k: '|'
 - p: [28, 29]
   k: +
 - p: [37, 36]
-  k: '='
+  k: {t: '=', s: +}
