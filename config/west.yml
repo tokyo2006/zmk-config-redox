@@ -49,6 +49,7 @@ manifest:
     - name: zmk-module-ble-management
     - name: zmk-feature-default-layer
       revision: codex/custom-rpc-rewrite
+    - name: zmk-feature-os-detection
     - name: zmk-module-settings-rpc
     - name: zmk-feature-device-info
     - name: zmk-feature-watchdog
