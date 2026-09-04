@@ -1,12 +1,3 @@
 manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/petejohanson
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: feat/pointers-with-input-processors
-      import: app/west.yml
   self:
-    path: config
-    
+    import: west-isolated.yml

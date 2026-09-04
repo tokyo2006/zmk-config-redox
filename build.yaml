@@ -14,18 +14,18 @@
 ---
 include:
   # redox
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: redox_central_dongle dongle_display
     artifact-name: redox_central_dongle
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: redox_peripheral_left
     artifact-name: redox_peripheral_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: redox_peripheral_right
     artifact-name: redox_peripheral_right
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: redox_central_dongle dongle_display
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n

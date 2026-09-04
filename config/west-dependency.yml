@@ -1,0 +1,59 @@
+manifest:
+  version: 1.2
+  defaults:
+    remote: cormoran
+    revision: main
+  remotes:
+    - name: cormoran
+      url-base: https://github.com/cormoran
+    - name: tokyo2006
+      url-base: https://github.com/tokyo2006
+  projects:
+    - name: zmk
+      remote: cormoran
+      import: app/west.yml
+      revision: main+dya
+      clone-depth: 1
+    - name: zephyr
+      remote: cormoran
+      revision: v4.1.0+zmk-fixes+nrf-half-duplex-uart
+      clone-depth: 1
+      import:
+        name-blocklist:
+          - ci-tools
+          - hal_altera
+          - hal_cypress
+          - hal_infineon
+          - hal_microchip
+          - hal_nxp
+          - hal_openisa
+          - hal_xtensa
+          - hal_st
+          - hal_ti
+          - loramac-node
+          - mcuboot
+          - mcumgr
+          - net-tools
+          - openthread
+          - edtt
+          - trusted-firmware-m
+          - chre
+
+    # ---- Level 2 feature modules ----
+    - name: zmk-feature-custom-settings
+    - name: zmk-feature-fast-keymap
+    - name: zmk-feature-runtime-macro
+      import: true
+    - name: zmk-feature-runtime-combo
+      import: true
+    - name: zmk-module-ble-management
+    - name: zmk-feature-default-layer
+      revision: codex/custom-rpc-rewrite
+    - name: zmk-module-settings-rpc
+    - name: zmk-feature-device-info
+    - name: zmk-feature-watchdog
+    - name: zmk-feature-kscan-diagnostics
+
+    # ---- Dongle OLED status screen (LVGL 9 fork with widget-border + layer-scroll fixes) ----
+    - name: zmk-dongle-display
+      remote: tokyo2006

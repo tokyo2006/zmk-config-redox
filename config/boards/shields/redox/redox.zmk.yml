@@ -5,9 +5,11 @@ type: shield
 url:
 requires:
   - pro_micro
-exposes:
 features:
   - keys
+outputs:
+  - usb
+  - ble
 siblings:
   - redox_left
   - redox_right
