@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: redox/rev1/base}
+layout: {zmk_keyboard: redox}
 layers:
   Qwery:
   - {t: '`', h: '~', s: '~'}
@@ -320,7 +320,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+ $$mdi:apple-keyboard-option$$
+  - Sft+$$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -357,8 +357,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Flash:
   - '&dongle_bootload_macro'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&studio_unlock'
+  - '&rmacro'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
